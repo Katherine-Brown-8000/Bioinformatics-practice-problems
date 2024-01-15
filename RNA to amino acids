@@ -31,7 +31,7 @@ codons_to_proteins = {
     "GAU": "D", "GAC": "D",
     "GAA": "E", "GAG": "E",
     "UGU": "C", "UGC": "C",
-    "UAA": " ", "UAG": " ", "UGA": " ", # the stop condons
+    "UAA": " ", "UAG": " ", "UGA": " ", # the stop codons
     "UGG": "W",
     "CGU": "R", "CGC": "R", "CGA": "R", "CGG": "R", "AGA": "R", "AGG": "R",
     "GGU": "G", "GGC": "G", "GGA": "G", "GGG": "G",
