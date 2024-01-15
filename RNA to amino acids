@@ -1,4 +1,4 @@
-# ChatGPT gave me a problem where I had to wright a code to convert an RNA sequence into amino acids, this process is known as transcription. 
+# ChatGPT gave me a problem where I had to wright a code to convert an RNA sequence into amino acids, this process is known as Transcription. 
 
 # Transcription 
 DNA_Sample = ["CACAUA"]
