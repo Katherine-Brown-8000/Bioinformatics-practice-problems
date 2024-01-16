@@ -22,3 +22,21 @@ similarity_percentage = calculate_nucleotide_similarity(sequence_1, sequence_2)
 print(f"Similarity: {similarity_percentage: .2f}%")
 
 # Calculates nucleotide similarity only if the sequences are the same length
+sequence_1 = "ATCG"
+sequence_2 = "ATC"
+
+def calculate_nucleotide_similarity(sequence_1, sequence_2):
+    min_length = min(len(sequence_1), len(sequence_2))
+
+    matching_count = 0
+
+    for i in range(min_length):
+        if sequence_1[i] == sequence_2[i]:
+            matching_count += 1
+
+    similarity = (matching_count / min_length) * 100 if min_length > 0 else 0
+
+    return similarity
+
+similarity_percentage = calculate_nucleotide_similarity(sequence_1, sequence_2)
+print(f"Similarity: {similarity_percentage: .2f}%")
