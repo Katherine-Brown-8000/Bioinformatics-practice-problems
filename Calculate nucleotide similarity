@@ -1,4 +1,4 @@
-# The are two methods shown for counting nucleotide similarity. The first method Calculates nucleotide similarity regardless of sequence length. The second method Calculates nucleotide similarity only if the sequences are the same length 
+# The are two methods shown for counting nucleotide similarity. The first method Calculates nucleotide similarity regardless of sequence length. The second method will return as a matchas long as 
 
 # Calculates nucleotide similarity regardless of sequence length 
 sequence_1 = "ATCG"
