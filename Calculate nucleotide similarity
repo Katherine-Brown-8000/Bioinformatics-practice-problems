@@ -1,0 +1,24 @@
+# The are two methods shown for counting nucleotide similarity. The first method Calculates nucleotide similarity regardless of sequence length. The second method Calculates nucleotide similarity only if the sequences are the same length 
+
+# Calculates nucleotide similarity regardless of sequence length 
+sequence_1 = "ATCG"
+sequence_2 = "ATCT"
+
+def calculate_nucleotide_similarity(sequence_1, sequence_2):
+    min_length = min(len(sequence_1), len(sequence_2))
+
+    matching_count = 0
+
+    for i in range(min_length):
+        if sequence_1[i] == sequence_2[i]:
+            matching_count += 1
+
+    max_length = max(len(sequence_1), len(sequence_2))
+    similarity = (matching_count / max_length) * 100 if max_length > 0 else 0
+
+    return similarity
+
+similarity_percentage = calculate_nucleotide_similarity(sequence_1, sequence_2)
+print(f"Similarity: {similarity_percentage: .2f}%")
+
+# Calculates nucleotide similarity only if the sequences are the same length
